@@ -61,4 +61,3 @@ body:
           required: true
         - label: I removed credentials, private code, and personal information.
           required: true
-

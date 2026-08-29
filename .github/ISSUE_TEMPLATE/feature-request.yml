@@ -34,4 +34,3 @@ body:
       options:
         - label: I searched existing feature requests before opening this one.
           required: true
-

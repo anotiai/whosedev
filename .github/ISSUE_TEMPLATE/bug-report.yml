@@ -1,0 +1,64 @@
+name: Bug report
+description: Tell us about a reproducible problem in WhoseDev.
+title: "[Bug]: "
+labels:
+  - bug
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve WhoseDev. Please remove private code, credentials, and personal information before submitting.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Area
+      options:
+        - Editor and workspaces
+        - AI chat or completions
+        - Models and AI settings
+        - Sign-in or account
+        - Installation or updates
+        - Extensions
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Give the smallest reliable sequence of steps.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshots
+      description: Redact credentials, private code, and personal data before attaching anything.
+      render: shell
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I reviewed the troubleshooting guide and searched existing issues.
+          required: true
+        - label: I removed credentials, private code, and personal information.
+          required: true
+

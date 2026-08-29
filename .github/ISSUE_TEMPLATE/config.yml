@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: WhoseDev troubleshooting guide
+    url: https://docs.whosedev.com/troubleshooting
+    about: Resolve common installation, sign-in, AI, and local-model problems.
